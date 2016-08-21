@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.gd.creditcard;
+package com.gd;
 
 import com.gd.creditcard.visa.VisaSCDataRead;
 import javax.smartcardio.CardException;
@@ -17,7 +17,7 @@ public class Test {
 
     public static void main(String[] args) throws CardException, Exception {
         VisaSCDataRead visa = new VisaSCDataRead(0,"*");
-        
+        System.out.println(visa.getAtr());
         System.out.println(visa.getIssuerData());
         System.out.println(visa.getNumber());
         System.out.println(visa.getName());
